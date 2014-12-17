@@ -1,0 +1,9 @@
+#foreach($rootMenu in $grantedMenu)
+	$rootMenu.id $rootMenu.name
+    #foreach($subMenu in $rootMenu.subMenus)
+		$subMenu.id $subMenu.name
+        #foreach($subSubMenu in $subMenu.subMenus)
+			$subSubMenu.id $subSubMenu.name
+    	#end 
+	#end
+#end

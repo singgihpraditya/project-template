@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.singgih</groupId>
+		<version>1.0.0</version>
+		<artifactId>baseutil</artifactId>
+	</parent>
+	<artifactId>oracle-sp-util</artifactId>
+	<dependencies>
+		<!-- junit lib -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>classes12</artifactId>
+			<version>${oracle.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.singgih</groupId>
+			<artifactId>properties-util</artifactId>
+			<version>${properties.util.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<junit.version>4.8.2</junit.version>
+		<oracle.version>10.1.0.4.0</oracle.version>
+		<properties.util.version>1.0.0</properties.util.version>
+	</properties>
+</project>

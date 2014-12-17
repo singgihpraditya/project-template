@@ -1,0 +1,36 @@
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://sample.webservice.singgih.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://sample.webservice.singgih.com/"
+	name="HelloWebServiceService">
+	<types />
+	<message name="sayHello">
+		<part name="guestname" type="xsd:string" />
+	</message>
+	<message name="sayHelloResponse">
+		<part name="return" type="xsd:string" />
+	</message>
+	<portType name="HelloWebService">
+		<operation name="sayHello">
+			<input message="tns:sayHello" />
+			<output message="tns:sayHelloResponse" />
+		</operation>
+	</portType>
+	<binding name="HelloWebServicePortBinding" type="tns:HelloWebService">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+			style="rpc" />
+		<operation name="sayHello">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" namespace="http://sample.webservice.singgih.com/" />
+			</input>
+			<output>
+				<soap:body use="literal" namespace="http://sample.webservice.singgih.com/" />
+			</output>
+		</operation>
+	</binding>
+	<service name="HelloWebServiceService">
+		<port name="HelloWebServicePort" binding="tns:HelloWebServicePortBinding">
+			<soap:address location="http://localhost:8091/helloWebService" />
+		</port>
+	</service>
+</definitions>

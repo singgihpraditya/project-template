@@ -1,0 +1,4 @@
+#set( $a = 100)	
+#set( $b = 200)
+calculator : $calculator.add($a, $b) 
+#parse("paper.vm")
