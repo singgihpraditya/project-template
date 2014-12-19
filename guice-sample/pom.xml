@@ -4,29 +4,6 @@
 	<parent>
 		<groupId>com.singgih</groupId>
 		<version>1.0.0</version>
-		<artifactId>baseutil</artifactId>
-	</parent>
-	<artifactId>mailsender-util</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>quartz</groupId>
-			<artifactId>quartz</artifactId>
-			<version>${quartz.version}</version>
-		</dependency>
-	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.0.2</version>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-	<properties>
-		<quartz.version>1.5.2</quartz.version>
-	</properties>
+		<artifactId>baseutil</artifactId>	</parent>
+	<artifactId>guice-sample</artifactId>
 </project>
