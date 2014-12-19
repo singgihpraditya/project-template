@@ -6,8 +6,7 @@
 		<action name="form">
 			<result>/views/user/form.jsp</result>
 		</action>
-		<action name="save" class="com.singgih.struts.sample.action.UserAction"
-			method="save">
+		<action name="save" class="com.singgih.struts.sample.action.UserAction" method="save">
 			<result name="success">/views/user/detail.jsp</result>
 		</action>
 	</package>
