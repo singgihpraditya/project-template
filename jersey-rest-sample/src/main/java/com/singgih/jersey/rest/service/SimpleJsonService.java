@@ -34,10 +34,10 @@ public class SimpleJsonService extends BaseService {
 		singer.setName("Metallica");
 		track.setSinger(singer);
 		List<MerchantVo> merchants = new ArrayList<MerchantVo>();
-		for(int i=0;i<3;i++){
+		for (int i = 0; i < 3; i++) {
 			MerchantVo merchant = new MerchantVo();
-			merchant.setName("merc"+i);
-			merchant.setAddress("add"+i);
+			merchant.setName("merc" + i);
+			merchant.setAddress("add" + i);
 			merchants.add(merchant);
 		}
 		track.setMerchants(merchants);

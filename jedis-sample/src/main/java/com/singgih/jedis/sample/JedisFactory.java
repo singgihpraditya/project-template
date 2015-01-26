@@ -2,20 +2,16 @@ package com.singgih.jedis.sample;
 
 import org.apache.log4j.Logger;
 
-import redis.clients.jedis.Jedis;
-
 public class JedisFactory {
 	static Logger log = Logger.getLogger("com.singgih.jedis.sample");
 	
-	private static Jedis jedis;
+	private static MyJedis jedis;
 	
-	public static Jedis getJedisInstance(){
-		String host = "localhost";
-		int port = 6379;
-		
+	public static MyJedis getJedisInstance(String host, int port){
+
 		if(jedis == null){
 			log.debug("Create new redis connection to : "+host+":"+port);
-			jedis = new Jedis("localhost", 6379);
+			jedis = new MyJedis(host, port);
 		}
 		return jedis;
 	}

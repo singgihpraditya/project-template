@@ -73,7 +73,7 @@ public class BaseDaoImpl implements BaseDao {
 		} finally {
 			session.close();
 		}
-		session.close();
+//		session.close();
 		stopTimer();
 		return object;
 	}

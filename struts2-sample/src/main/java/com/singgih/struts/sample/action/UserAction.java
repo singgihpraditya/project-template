@@ -11,16 +11,7 @@ public class UserAction extends BaseAction {
 	private static final long serialVersionUID = -3500171507041956356L;
 
 	Logger log = Logger.getLogger("com.singgih.struts");
-	private UserVo user;
 	private List<UserVo> userList;
-
-	public UserVo getUser() {
-		return user;
-	}
-
-	public void setUser(UserVo user) {
-		this.user = user;
-	}
 
 	public List<UserVo> getUserList() {
 		return userList;
@@ -30,17 +21,8 @@ public class UserAction extends BaseAction {
 		this.userList = userList;
 	}
 
-	public String save() {
-		startTimer();
-		log.debug(user);
-		stopTimer();
-		return SUCCESS;
-	}
-
 	public String list() {
-		startTimer();
 		log.debug(userList);
-		stopTimer();
 		return SUCCESS;
 	}
 }

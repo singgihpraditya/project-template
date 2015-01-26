@@ -1,0 +1,13 @@
+<decorators defaultdir="/WEB-INF/decorators/">
+	<decorator name="main" page="mainTemplate.dec">
+		<pattern>/main*</pattern>
+		<pattern>/user*</pattern>
+
+	</decorator>
+	<decorator name="login" page="loginTemplate.dec">
+		<pattern>/login*</pattern>
+	</decorator>
+	<excludes>
+		<pattern>*/ajax/*</pattern>
+	</excludes>
+</decorators>
