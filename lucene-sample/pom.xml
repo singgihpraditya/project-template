@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.singgih</groupId>
+		<version>1.0.0</version>
+		<artifactId>baseutil</artifactId>
+	</parent>
+	<artifactId>lucene-sample</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>${lucene.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>${lucene.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-queryparser</artifactId>
+			<version>${lucene.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.singgih</groupId>
+			<artifactId>properties-util</artifactId>
+			<version>${properties.util.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connector.java.version}</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<lucene.version>4.0.0-BETA</lucene.version>
+		<properties.util.version>1.0.0</properties.util.version>
+		<mysql.connector.java.version>5.1.10</mysql.connector.java.version>
+	</properties>
+</project>
