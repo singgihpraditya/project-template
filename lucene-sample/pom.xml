@@ -35,7 +35,7 @@
 		</dependency>
 	</dependencies>
 	<properties>
-		<lucene.version>4.0.0-BETA</lucene.version>
+		<lucene.version>7.1.0</lucene.version>
 		<properties.util.version>1.0.0</properties.util.version>
 		<mysql.connector.java.version>5.1.10</mysql.connector.java.version>
 	</properties>
