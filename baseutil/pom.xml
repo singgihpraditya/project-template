@@ -40,7 +40,7 @@
 		<log4j.version>1.2.13</log4j.version>
 		<guava.version>14.0.1</guava.version>
 		<guice.version>3.0</guice.version>
-		<junit.version>4.8.2</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 	<build>
 		<plugins>
