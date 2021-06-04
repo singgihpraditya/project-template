@@ -90,6 +90,6 @@
 		<gson.version>1.7.1</gson.version>
 		<jetty.version>8.1.16.v20140903</jetty.version>
 		<jetty.servlet.version>8.1.0.RC0</jetty.servlet.version>
-		<httpclient.version>4.3.5</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 	</properties>
 </project>
