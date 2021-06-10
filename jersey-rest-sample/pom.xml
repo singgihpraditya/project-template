@@ -89,7 +89,7 @@
 		<jersey.version>1.8</jersey.version>
 		<gson.version>1.7.1</gson.version>
 		<jetty.version>8.1.16.v20140903</jetty.version>
-		<jetty.servlet.version>8.1.0.RC0</jetty.servlet.version>
+		<jetty.servlet.version>9.4.41.v20210516</jetty.servlet.version>
 		<httpclient.version>4.3.5</httpclient.version>
 	</properties>
 </project>
