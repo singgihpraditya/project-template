@@ -44,7 +44,7 @@
 	<properties>
 		<hibernate.version>4.0.1.Final</hibernate.version>
 		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
-		<mysql.connector.java.version>5.1.10</mysql.connector.java.version>
+		<mysql.connector.java.version>8.0.28</mysql.connector.java.version>
 		<javax.validation>1.0.0.GA</javax.validation>
 	</properties>
 </project>
